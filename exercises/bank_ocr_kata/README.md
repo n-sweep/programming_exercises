@@ -1,6 +1,8 @@
 # Bank OCR
 
-Adapted from https://codingdojo.org/kata/BankOCR/
+Use git to your advantage and post your solutions as links to your git repo if you wish!
+
+Adapted from [Coding Dojo](https://codingdojo.org/kata/BankOCR/)
 
 ## Problem Description
 
@@ -18,7 +20,7 @@ Adapted from https://codingdojo.org/kata/BankOCR/
 > 
 > Your first task is to write a program that can take this file and parse it into actual account numbers.
 
-See `./testcases1.txt`
+See [`testcases1.txt`](https://github.com/n-sweep/programming_exercises/blob/main/exercises/bank_ocr_kata/testcases1.txt)
 
 ### User Story 2
 
@@ -34,21 +36,21 @@ See `./testcases1.txt`
 > 
 > So now you should also write some code that calculates the checksum for a given number, and identifies if it is a valid account number.
 
-See `./testcases1.txt`
+See [`testcases1.txt`](https://github.com/n-sweep/programming_exercises/blob/main/exercises/bank_ocr_kata/testcases1.txt)
 
 ### User Story 3
 
 > Your boss is keen to see your results. He asks you to write out a file of your findings, one for each input file, in this format:
-> 
-> ```
-> 457508000
-> 664371495 ERR
-> 86110??36 ILL
-> ```
-> 
+
+```
+457508000
+664371495 ERR
+86110??36 ILL
+```
+
 > ie the file has one account number per row. If some characters are illegible, they are replaced by a ?. In the case of a wrong checksum, or illegible number, this is noted in a second column indicating status.
 
-See `./testcases3.txt`
+See [`testcases3.txt`](https://github.com/n-sweep/programming_exercises/blob/main/exercises/bank_ocr_kata/testcases3.txt)
 
 ### User Story 4
 
@@ -62,4 +64,4 @@ See `./testcases3.txt`
 > 
 > The 9 could be an 8 if the scanner had missed one |. Or the 0 could be an 8. Or the 1 could be a 7. The 5 could be a 9 or 6. So your next task is to look at numbers that have come back as ERR or ILL, and try to guess what they should be, by adding or removing just one pipe or underscore. If there is only one possible number with a valid checksum, then use that. If there are several options, the status should be AMB. If you still can’t work out what it should be, the status should be reported ILL.
 
-See `./testcases4.txt`
+See [`testcases4.txt`](https://github.com/n-sweep/programming_exercises/blob/main/exercises/bank_ocr_kata/testcases4.txt)
